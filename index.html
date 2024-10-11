@@ -21,6 +21,41 @@
  .social  a svg {
       width: 30px;
       fill: #91929a;
+
+	  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.styled-table thead th {
+    background-color: #444;
+    color: #fff;
+}
+
+.styled-table thead th[colspan] {
+    text-align: center;
+}
+
+.styled-table th[headers="h"] {
+    background-color: #666;
+    color: #fff;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
     }
 	</style>
 </head>
