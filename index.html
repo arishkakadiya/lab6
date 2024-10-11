@@ -18,46 +18,44 @@
 
 	<style>
 
- .social  a svg {
+.social  a svg {
       width: 30px;
       fill: #91929a;
 
-	  .styled-table {
+table {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     text-align: left;
 }
 
-.styled-table th, 
-.styled-table td {
+table th, 
+table td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
 }
 
-.styled-table thead th {
+table thead th {
     background-color: #444;
     color: #fff;
 }
 
-.styled-table thead th[colspan] {
+table thead th[colspan] {
     text-align: center;
 }
-
-.styled-table th[headers="h"] {
-    background-color: #666;
-    color: #fff;
+table thead th[headers="asp"]{
+	background-color: #D3D3D3; 
+    color: black;
 }
-
-.styled-table tbody tr:nth-child(even) {
-    background-color: #f3f3f3;
+table thead th[headers="sp"]{
+	background-color: #D3D3D3 ;
+	 color: black;
+   
 }
-
-.styled-table tbody tr:nth-child(odd) {
-    background-color: #fff;
+table tbody th{
+	background-color: #D3D3D3 
 }
-    }
-	</style>
+</style>
 </head>
 
 <body>
@@ -141,6 +139,7 @@
 				<h2>Why choosing HI/Max</h2>
 				<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</p>
 				<table>
+					<thead>
 					<tr>
 						<th rowspan="2">Year</th>
 						<th colspan="2" id="sp">Sold Properties</th>
@@ -152,6 +151,8 @@
 						<th id="sh" headers="asp">Single House</th>
 						<th id="c" headers="asp">Condo</th>
 					</tr>
+					</thead>
+					<tbody>
 					<tr>
 						<th id="2021">2021</th>
 						<td headers="sp q">50</td>
@@ -166,6 +167,7 @@
 						<td headers="asp sh">$780,000</td>
 						<td headers="asp c">240,000</td>
 					</tr>
+					</tbody>
 				</table>
 
 			</div>
